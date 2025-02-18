@@ -23,7 +23,7 @@ public class TetrisGame extends JPanel implements ActionListener {
     private Queue<int[][]> blockQueue = new LinkedList<>();
     private int[][] currentBlock;
     private int blockRow = 0, blockCol = COLS / 2;
-    private Random rand = new Random();
+    private Random random = new Random();
     private boolean gameOver = false;
     private int score = 0;
     private int speed = 500; // Initial speed in milliseconds
@@ -190,7 +190,7 @@ public class TetrisGame extends JPanel implements ActionListener {
 
         // Draw the current block
         if (!gameOver) {
-            g.setColor(Color.RED);
+            g.setColor(Color.BLUE);
             for (int r = 0; r < currentBlock.length; r++) {
                 for (int c = 0; c < currentBlock[0].length; c++) {
                     if (currentBlock[r][c] == 1) {
