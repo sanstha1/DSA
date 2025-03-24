@@ -47,7 +47,7 @@ public class Question4a {
         System.out.println("+-----------+-------+");
     }
 
-    public static List<Map.Entry<String, Integer>> getTopHashtags(List<Tweet> tweets, String monthYear) {
+    static List<Map.Entry<String, Integer>> getTopHashtags(List<Tweet> tweets, String monthYear) {
         Map<String, Integer> hashtagCount = new HashMap<>();
         Pattern hashtagPattern = Pattern.compile("#\\w+"); // Regex for hashtags
 
